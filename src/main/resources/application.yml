@@ -1,0 +1,14 @@
+# eureka server port
+server:
+  port: 8761
+
+# MSA module id (eureka)
+spring:
+  application:
+    name: discoveryservice
+
+# Eureka server does not need to be included
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
