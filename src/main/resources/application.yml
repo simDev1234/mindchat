@@ -5,10 +5,13 @@ server:
 # MSA module id (eureka)
 spring:
   application:
-    name: discoveryservice
+    name: discovery-service
 
 # Eureka server does not need to be included
 eureka:
   client:
     register-with-eureka: false
     fetch-registry: false
+  # instance:
+    # instance-id: ${spring.cloud.client.hostname}:${spring.application.instance_id:${random.value}}
+
